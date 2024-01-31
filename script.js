@@ -116,7 +116,7 @@ videoconanimation();
 
 function imgscrollinganimation(){
    gsap.to(".page3 .child", {
-      transition: "all ease-in 1s",
+      transition: "all ease-in 2s",
       opacity: 1,
       scrollTrigger: {
         trigger: ".page3",
