@@ -707,7 +707,7 @@ body{
 
 
     body{
-        position: relative;
+        position: absolute;
         z-index: 99;
     }
 
