@@ -1035,7 +1035,7 @@ body{
     }
     
     .page2 .elem .dets{
-        height: 7vh;
+        height: 5vh;
         width: 70%;
         border-radius: 30px;
         top: 50%;
@@ -1055,7 +1055,8 @@ body{
     }
     
     .page2 .elem .dets li{
-        margin-left: 2vw;
+        margin-left: 1vw;
+        font-size: 12px;
     }
 
     .page2 .elem .dets span{
