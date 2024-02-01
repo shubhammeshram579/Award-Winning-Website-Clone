@@ -1096,6 +1096,7 @@ body{
         font-size: 8vw;
         padding-right: 10vw;
         padding-top: 5vw;
+        padding-bottom: 30vh;
         /* background-color: red; */
         
     }
@@ -1249,7 +1250,7 @@ body{
 
     .page6-part2 h4{
         font-size: 15px;
-        text-align: left;
+        text-align: start;
         margin-top: -25vh;
         margin-left: -18vw;
 
