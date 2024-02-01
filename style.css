@@ -714,7 +714,7 @@ body{
     .nav{
         height: 14vh;
         width: 100%;
-        position: fixed;
+        position: absolute;
         z-index: 99;
         display: flex;
         align-items:flex-start;
@@ -752,8 +752,8 @@ body{
         background-color:#3d3a3a;
         color: #fff;
         position: absolute;
-        z-index: -1;
-        opacity: -1;
+        z-index: -20;
+        opacity: 0;
         display: flex;
         align-items:center;
         justify-content:space-between;
@@ -826,8 +826,8 @@ body{
         width: 100%;
         background-color: #111;
         position: absolute;
-        z-index: -1;
-        opacity: -1;
+        z-index: -10;
+        opacity: 0;
         display: flex;
         align-items: center;
         flex-direction: column;
