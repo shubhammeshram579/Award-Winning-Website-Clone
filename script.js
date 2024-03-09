@@ -3,11 +3,12 @@ function locoscrollani(){
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".main"),
   smooth: true,
-  mobile: {
-        smooth: true,
-        inertia: 0.8,
-        getDirection: true,
-      }
+   mobile: {
+      smooth: true
+  },
+  tablet: {
+      smooth: true
+  }
 });
 locoScroll.on("scroll", ScrollTrigger.update);
 
@@ -29,6 +30,7 @@ ScrollTrigger.refresh();
 };
 
 locoscrollani();
+
 
  
 
@@ -124,8 +126,8 @@ function imgscrollinganimation(){
    gsap.from(".page3 .child", {
       transition: "all ease-in 0.5s",
       opacity: 0,
-      duration:1,
-      delay:1,
+      // duration:1,
+      // delay:1,
       scrollTrigger: {
         trigger: ".page3 .child",
         scroller: ".main",
@@ -139,8 +141,8 @@ function imgscrollinganimation(){
    gsap.from(".page3 .child2", {
       transition: "all ease-in 1s",
       opacity: 0,
-      duration:1,
-      delay:1,
+      // duration:1,
+      // delay:1,
       scrollTrigger: {
         trigger: ".page3 .child2",
         scroller: ".main",
