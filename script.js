@@ -121,15 +121,32 @@ videoconanimation();
 
 
 function imgscrollinganimation(){
-   gsap.to(".page3 .child", {
-      transition: "all ease-in 2s",
-      opacity: 1,
+   gsap.from(".page3 .child", {
+      transition: "all ease-in 0.5s",
+      opacity: 0,
+      duration:1,
+      delay:1,
       scrollTrigger: {
-        trigger: ".page3",
+        trigger: ".page3 .child",
         scroller: ".main",
-        start: "top 10%",
-        end: "top 30%",
-        scrub: true,
+        start: "top 20%",
+        end: "top 50%",
+        scrub:1,
+      //   markers:true
+      },
+    });
+
+   gsap.from(".page3 .child2", {
+      transition: "all ease-in 1s",
+      opacity: 0,
+      duration:1,
+      delay:1,
+      scrollTrigger: {
+        trigger: ".page3 .child2",
+        scroller: ".main",
+        start: "top 20%",
+        end: "top 50%",
+        scrub:1,
       //   markers:true
       },
     });
@@ -137,14 +154,14 @@ function imgscrollinganimation(){
    
    
     gsap.to(".page6 .imagcon svg", {
-      transition: "all ease-in 2s",
+      transition: "all ease-in 1s",
       opacity: 1,
       scrollTrigger: {
         trigger: ".page6",
         scroller: ".main",
         start: "top 65%",
         end: "top 70%",
-        scrub: true,
+        scrub: 1,
       //   markers:true
       },
     });
@@ -199,14 +216,14 @@ var a = 0
 menubtn.addEventListener("click",function(){
    if(a === 0){
    menubar.style.opacity = 1;
-   menubar.style.zIndex = "9"
+   menubar.style.zIndex = "998"
    menubtn.style.fontSize = "25px"
    logoimg.style.color = "#fff"
    logoimg2.style.color = "#fff"
    a = 1
 }else{
    menubar.style.opacity = 0;
-   menubar.style.zIndex = "-10"
+   menubar.style.zIndex = "-40"
    menubtn.style.fontSize = "20px"
    logoimg.style.color = "#111"
    logoimg2.style.color = "#111"
@@ -228,7 +245,7 @@ var a = 0
 cardbtn.addEventListener("click",function(){
    if(a === 0){
       cardbar.style.opacity = 1;
-      cardbar.style.zIndex = "9"
+      cardbar.style.zIndex = "998"
       cardbtn.style.fontSize = "25px"
       logoimg.style.color = "#fff"
       logoimg2.style.color = "#fff"
@@ -236,7 +253,7 @@ cardbtn.addEventListener("click",function(){
    a = 1
 }else{
    cardbar.style.opacity = 0;
-   cardbar.style.zIndex = "-10"
+   cardbar.style.zIndex = "-41"
    cardbtn.style.fontSize = "20px"
    logoimg.style.color = "#111"
    logoimg2.style.color = "#111"
