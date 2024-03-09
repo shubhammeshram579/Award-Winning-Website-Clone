@@ -2,7 +2,12 @@ function locoscrollani(){
    gsap.registerPlugin(ScrollTrigger);
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".main"),
-  smooth: true
+  smooth: true,
+  mobile: {
+        smooth: true,
+        inertia: 0.8,
+        getDirection: true,
+      }
 });
 locoScroll.on("scroll", ScrollTrigger.update);
 
@@ -21,10 +26,11 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 ScrollTrigger.refresh();
 
-
-}
+};
 
 locoscrollani();
+
+ 
 
 
 
@@ -124,6 +130,7 @@ function imgscrollinganimation(){
         start: "top 10%",
         end: "top 30%",
         scrub: true,
+      //   markers:true
       },
     });
    
@@ -138,6 +145,7 @@ function imgscrollinganimation(){
         start: "top 65%",
         end: "top 70%",
         scrub: true,
+      //   markers:true
       },
     });
    };
@@ -241,27 +249,6 @@ menubaranimation();
 
 
 
-
-// document.querySelector("#child1").addEventListener("mouseenter",function(){
-//    gsap.to(".curcer",{
-//       transform: 'translate(-50%,-50%) scale(1)'
-//    })
-
-// })
-
-
-// document.querySelector("#child1").addEventListener("mouseleave",function(){
-//    gsap.to(".curcer",{
-//       transform: 'translate(-50%,-50%) scale(0)'
-//    })
-
-// })
-
-
-
-
-
-
 function hovertopageanimation(){
 var boxcaon = document.querySelectorAll(".contener1 .dets");
 var boximg = document.querySelectorAll(".contener1 .box img");
@@ -358,10 +345,6 @@ boxcaon3.forEach(function(val){
 };
 
 hovertopageanimation();
-
-
-
-
 
 
 
