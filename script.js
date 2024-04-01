@@ -156,7 +156,7 @@ function imgscrollinganimation(){
    
    
     gsap.to(".page6 .imagcon svg", {
-      transition: "all ease-in 1s",
+      transition: "all ease-in 0.3s",
       opacity: 1,
       scrollTrigger: {
         trigger: ".page6",
